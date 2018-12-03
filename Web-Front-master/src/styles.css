@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+    background-image: url("assets/imagens/fundo02.jpg");
+}
+
+a[href*=login] {
+    color: black;
+}
+
+a[href*=carrinho] {
+    color: black;
+}
+
+.novoproduto{
+    background-color: #1cf326;
+    border: none;
+}
+
+.produtos{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nomeproduto{
+    text-align: center;
+}
+
+.preco{
+    text-align: center
+}
+
+.comprar{
+    background-color: rgba(40, 238, 50, 0.699);
+    border-radius: 5px;
+    text-transform: uppercase;
+}

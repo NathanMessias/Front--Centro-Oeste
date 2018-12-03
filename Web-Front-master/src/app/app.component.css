@@ -1,0 +1,73 @@
+/* TOPO */
+.topo {
+    font-family: 'Bree Serif',serif;
+    margin: 30px 0px;
+    padding-top: 15px;
+}
+
+.logo{
+        width: 220px;
+    }
+
+.icone{
+    margin-right: 10px;
+}
+
+/* MENU HORIZONTAL */
+.menu-horizontal{
+    font-family: 'Bree Serif', serif;
+    padding: 5px 0px;
+    background-color: #1cf326;
+    border-radius: 10px;
+    margin: 0;
+}
+.menu-horizontal a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* MEIO */
+.meio{
+    margin: 10px 0 ;
+}
+
+
+/* MENU VERTICAL */
+.menu-vertical{
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(63, 235, 28);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-vertical a {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.menu-vertical .item-info{
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+/*RODAPE*/
+.rodape p {
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.icone {
+    width: 24px;    
+}
+
+.fontetopo{
+    color: black;
+}

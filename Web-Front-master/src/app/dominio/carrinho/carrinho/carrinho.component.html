@@ -1,0 +1,74 @@
+<h1 class='pedidos'>
+    Seus Pedidos
+</h1>
+
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div *ngIf="itensCarrinho; else: ElseBlock">
+            <table class="table" >
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Operações</th>
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+             <tbody>
+          <tr class="margem"
+            *ngFor="let itemCarrinho of itensCarrinho; let i = index"
+            > 
+                          <!--Nome do Produto-->
+                  <td>{{ itemCarrinho.produto.nome }}</td>
+                          <!--Categoria do Produto-->
+                  <td>{{ itemCarrinho.produto.categoria.nome }}</td>
+                          <!--Quantidade do Produto-->
+                  <td>{{ itemCarrinho.quantidade }}</td>
+               
+                <!-- aumentar diminuir e quantidade -->
+         <!--<div >-->
+                  <p>
+                    <a (click)="diminuirQuantidadeItemCarrinho(i)">
+                      <button class=" btn btn-default" style="font-size: 20px; width: 18px;">-</button>
+                    </a>
+                    <!--<span> {{ itemCarrinho.quantidade }} </span>-->
+                    <a (click)="aumentarQuantidadeItemCarrinho(i)">
+                      <button class="btn btn-default" style="font-size: 20px; width: 18px;">+</button>
+                    </a>
+                  </p>
+                  <p style="margin-bottom:10px">
+                      <a class="btn btn-default" type="button" style="background-color: #1cf326; ; font-size: 17px; width: 80px; color: black;" 
+                        (click)="excluirItemCarrinho(i)">Remover</a>
+                  </p>
+              <!--</div>-->
+                <th>
+                  R$
+                  {{
+                    (
+                      itemCarrinho.produto.preco * itemCarrinho.quantidade
+                    ).toFixed(2)
+                  }}
+                </th>
+  
+                <!-- descricao -->
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+
+    <div class="col"> <h4>Total dos produtos: R$ {{ valorTotalCarrinho().toFixed(2) }}</h4> </div> 
+
+    <div style="height: 45px" class="row align-items-end">
+      <div class="col">
+          <button  [routerLink]="['/home']" style="display: block; margin: 0 auto;" type="button" class="btn btn-primary voltarhome">Voltar</button>
+      </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,39 @@
+.pedidos{
+    font-family: 'Bree Serif',serif;
+    color: #f8ad0a;
+    text-align: center;
+}
+
+.voltarhome{
+    background-color: #1cf326;
+    border: none;
+    font-size: 26px;
+    width: 75px;
+}
+
+.quantidade-widget {
+    display: none;
+  }
+  
+  img {
+    width: 65px;
+  }
+
+  .margem{
+    text-align: center;
+  }
+
+  .table{
+    text-align: center;
+  }
+  
+  p,
+  a {
+    margin: 2px;
+    line-height: 18px;
+  }
+  
+  button,
+  a {
+    padding: 0;
+  }

@@ -1,0 +1,86 @@
+<div class="container">
+
+	<!-- TOPO -->
+		<div class="row topo align-items-center">
+				<div class="col-md-4">
+					<a href="#"><img class="logo" src="assets/imagens/logo.jpg" /></a>
+				</div>
+				<div class="col-md-2 offset-md-4" >
+					<a [routerLink]="['login']"><img class="icone" src="assets/imagens/man-user.png">Login</a>
+				</div>
+				<div class="col-md-2">
+					<carrinho-widget></carrinho-widget>
+						<!--<a [routerLink]="['carrinho']"><img class="icone" src="assets/imagens/shopping-cart.png">Pedidos</a> -->
+				</div>
+
+	</div>
+
+	<!--//<img class="icone" src="assets/imagens/shopping-cart.png"> -- >
+	<-- MENU HORIZONTAL -->
+	<div class="row menu-horizontal">
+		<div class="col-10">
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Inicio</a>
+				</li>
+
+
+				<li class="nav-item" *ngFor="let categoria of categorias">
+					<a class="nav-link" [routerLink]="['produto/categoria/', categoria.id]">{{categoria.nome}}</a>
+				</li>
+				
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- MEIO -->
+	<div class="row meio">
+
+		<!-- MENU VERTICAL -->
+		<div class="col-3 menu-vertical">
+
+
+			<ul class="nav flex-column">
+				<li class="nav-item item-info">
+					Categoria
+				</li>
+
+				<li class="nav-item" *ngFor="let categoria of categorias">
+					<a class="nav-link" [routerLink]="['produto/categoria/', categoria.id]">{{categoria.nome}}</a>
+				</li>
+			</ul>
+
+			<ul class="nav flex-column">
+					<li class="nav-item item-info">
+						Administrativo
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]="['produto']">Produtos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]="['categoria']">Categorias</a>
+					</li>
+				</ul>
+
+		</div>
+
+		<!-- CONTEUDO -->
+		<div class="col-9">
+
+			<!-- start: page -->
+			<router-outlet></router-outlet>
+			<!-- end: page --> 
+
+		</div>
+	</div>
+
+	<!-- RODAPE -->
+	<div class="row">
+		<div class="col rodape">
+			<p> Copyright&#174; </p>
+		</div>
+	</div>
+
+</div>
