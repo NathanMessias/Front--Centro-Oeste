@@ -38,3 +38,9 @@ a[href*=carrinho] {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
+.titulo{
+    font-family: 'Bree Serif',serif;
+    color: #f8ad0a;
+    text-align: center;
+}

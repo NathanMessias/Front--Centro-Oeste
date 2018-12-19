@@ -13,7 +13,7 @@ const appRoutes: Routes = [
     { path: 'construcao', loadChildren: './dominio/construcao/construcao.module#ConstrucaoModule'},
     { path: 'cadastrologin', loadChildren: './dominio/cadastrologin/cadastrologin.module#CadastrologinModule'},
     { path: 'carrinho', loadChildren: './dominio/carrinho/carrinho.module#CarrinhoModule'},
-    { path: 'login', loadChildren: './dominio/cadastrologin/login-home.module#LoginhomeModule'}
+    { path: 'login', loadChildren: './dominio/cadastrologin/cadastrologin.module#CadastrologinModule'}
 ];
 
 

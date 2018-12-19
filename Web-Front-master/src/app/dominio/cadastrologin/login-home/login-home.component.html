@@ -1,27 +1,68 @@
+	
+	
 <div class="box-parent-login">
-	<div class="well bg-white box-login">
-		<h1 class="ls-login-logo">locaweb</h1>
-		<form role="form">
-			<fieldset>
- 
-				<div class="form-group ls-login-user">
-					<label for="userLogin">Usuário</label>
-					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+			<div class="well bg-white box-login">
+				<h1 class="ls-login-logo" class='tilulo'>Centro Oeste</h1>
+				<form role="form">
+					<fieldset>
+						<div class="form-group ls-login-user">
+							<label for="userLogin">Usuário</label>
+							<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+						</div>
+		
+						<div class="form-group ls-login-password">
+							<label for="userPassword">Senha</label>
+							<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+						</div>
+						
+
+							  
+						<a class="ls-login-forgot">Continuar com o </a>
+						<button class="button" style="vertical-align:middle;" (click)="facebookLogin()">
+								<i class="fa fa-facebook"></i><span>Facebook</span></button>
+		
+						<input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
+						<p class="txt-center ls-login-signup">Não possui um usuário na Centro Oeste?
+							<a href="login/cadastrologin">Cadastre-se agora</a>
+						</p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<div class="col-md-12" style="text-align: -webkit-center;">
+							<div class="card" style="width: 20rem;margin: 20px 0 24px 0;text-align: -webkit-center;" *ngIf="user.photoUrl">
+								<img [src]="user.photoUrl" alt="image" style="width: 200px;border-radius: 50%; margin-top: 10px">
+									<div class="card-body">
+											<h4 class="card-title">{{user.name}}</h4>
+											<p class="card-text">{{user.email}}</p>
+									</div>
+							</div>
+						</div>
+
+				  <!-- Dropdown menu links --
+						<a class="dropdown-item" href="#">Google</a>
 				</div>
- 
-				<div class="form-group ls-login-password">
-					<label for="userPassword">Senha</label>
-					<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
-				</div>
- 
-				<a href="#" class="ls-login-forgot">Esqueci minha senha</a>
- 
-				<input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
-				<p class="txt-center ls-login-signup">Não possui um usuário na Locaweb?
-					<a href="#">Cadastre-se agora</a>
-				</p>
- 
-			</fieldset>
-		</form>
-	</div>
-</div>
+				</div> -->
+				
+				
+	<!--			<div class="container-fluid">
+					<div class="row" style="text-align: -webkit-center;">
+						<div class="col-md-12">
+							<h2>
+								<p>Login com facebook</p>
+							</h2>
+							<button class="btn btn-primary" style="background-color: #385998; border-color:#385998" (click)="facebookLogin()">
+								<i class="fa fa-facebook"></i>Facebook</button>
+						</div>
+						<div class="col-md-12" style="text-align: -webkit-center;">
+							<div class="card" style="width: 20rem;margin: 20px 0 24px 0;text-align: -webkit-center;" *ngIf="user.photoUrl">
+								<img [src]="user.photoUrl" alt="image" style="width: 200px;border-radius: 50%; margin-top: 10px">
+									<div class="card-body">
+											<h4 class="card-title">{{user.name}}</h4>
+											<p class="card-text">{{user.email}}</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div> -->

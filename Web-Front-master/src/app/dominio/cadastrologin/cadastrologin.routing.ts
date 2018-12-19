@@ -5,8 +5,10 @@ import { CadastrologinComponent } from './cadastrologin/cadastrologin.component'
 import { LoginHomeComponent } from './login-home/login-home.component';
 
 const cadastrologinRoutes: Routes = [
-    { path: '', component: CadastrologinComponent},
-    { path: '', component: LoginHomeComponent}
+    { path: '', component: LoginHomeComponent},
+    { path: 'cadastrologin', component: CadastrologinComponent}
+    
+   
 ];
 
 
